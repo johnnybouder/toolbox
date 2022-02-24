@@ -14,6 +14,20 @@ class MyArray {
     removeLast() {
         this.collection.pop();
     }
+    getFirst() {
+        if (this.collection.length > 0) {
+            return this.collection[0];
+        } else {
+            return null;
+        }
+    }
+    getLast() {
+        if (this.collection.length > 0) {
+            return this.collection[this.collection.length - 1];
+        } else {
+            return null;
+        }
+    }
     sortAsc() {
         this.collection.sort(
             (a, b) => {
@@ -47,3 +61,5 @@ coll.addEnd(1);
 coll.sortAsc();
 
 console.log(coll);
+console.log(coll.getFirst());
+console.log(coll.getLast());
