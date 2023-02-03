@@ -4,9 +4,9 @@ using System.Collections.Generic;
 class MyList
 {
     private List<int> data;
-    public MyList(List<int> list)
+    public MyList()
     {
-        data = list;
+        data = new List<int>();
     }
     public void SortAsc()
     {
@@ -32,7 +32,7 @@ class MyList
     {
         data.Insert(0, val);
     }
-    public void AddToEnd(int val)
+    public void Add(int val)
     {
         data.Add(val);
     }
@@ -40,7 +40,7 @@ class MyList
     {
         data.RemoveAt(0);
     }
-    public void RemoveLast()
+    public void Remove()
     {
         data.RemoveAt(data.Count - 1);
     }

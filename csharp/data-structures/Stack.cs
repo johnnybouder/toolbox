@@ -3,15 +3,26 @@ using System.Collections;
 
 class MyStack
 {
+    private Stack stack;
     public MyStack()
     {
-        Stack myStack = new Stack();
-
-        myStack.Push("1");
-        myStack.Push("2");
-        myStack.Push('3');
-
-        foreach (var elem in myStack)
+        stack = new Stack();
+    }
+    public void Add(string val)
+    {
+        stack.Push(val);
+    }
+    public void Remove()
+    {
+        stack.Pop();
+    }
+    public void Clear()
+    {
+        stack.Clear();
+    }
+    public void PrintAll()
+    {
+        foreach (var elem in stack)
         {
             Console.WriteLine(elem);
         }

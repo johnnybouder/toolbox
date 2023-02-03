@@ -4,9 +4,17 @@ using System.Collections;
 class MyArrayList
 {
     private ArrayList data;
-    public MyArrayList(ArrayList list)
+    public MyArrayList()
     {
-        data = list;
+        data = new ArrayList();
+    }
+    public void Add(int val)
+    {
+        data.Add(val);
+    }
+    public void Update(int index, int val)
+    {
+        data[index] = val;
     }
     public void SortAsc()
     {

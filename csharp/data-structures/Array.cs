@@ -3,9 +3,17 @@ using System;
 class MyArray
 {
     private int[] data;
-    public MyArray(int[] array)
+    public MyArray(int size)
     {
-        data = array;
+        data = new int[size];
+    }
+    public void Add(int index, int val)
+    {
+        data[index] = val;
+    }
+    public void Update(int index, int val)
+    {
+        data[index] = val;
     }
     public void SortAsc()
     {
