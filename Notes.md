@@ -19,8 +19,9 @@
     - Merge sort (n^2)
     - Radix sort (n^k)
   - Searching:
-    - BFS: uses queue, traverses level by level
-    - DFS: uses stack, searches by depth
+    - Linear (n): searchs one by one
+    - BFS (n): uses queue, traverses level by level
+    - DFS (n): uses stack, searches by depth
 
 ## Object Oriented Programming
 
@@ -61,6 +62,16 @@
 
 ## Web Dev
 
+- REST best practices:
+  - Use JSON format
+  - Use nouns instead of verbs for endpoints
+  - Name collections in plural (ex: /posts/1)
+  - Use HTTP status codes in error handling
+  - Use nesting on endpoints to show relationship
+  - Use filtering, sorting, and pagination on data requests (ex: ?tags=1, ?sort=tags, ?page=1&per_page=100)
+    - Can use aliases to
+  - Use clear versioning
+  - Provide accurate documentatation
 - Idempotent REST methods (subsequent requests provide same result):
   - GET, PUT, DELETE: Idempotent
   - POST: NOT Idempotent (new object is created with every call)
