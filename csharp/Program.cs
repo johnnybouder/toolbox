@@ -69,5 +69,17 @@ internal class Program
         // list.PrintAll();
         // list.SortAsc();
         // list.PrintAll();
+
+        // List of Objects
+        // List<CustomObject> list = new List<CustomObject>();
+        // list.Add(new CustomObject(1, "one"));
+        // list.Add(new CustomObject(3, "three"));
+        // list.Add(new CustomObject(2, "two"));
+        // list.Add(new CustomObject(5, "five"));
+        // list.Add(new CustomObject(4, "four"));
+        // MyCustomList customList = new MyCustomList(list);
+        // customList.SortObjectsAsc();
+        // customList.SortObjectsDesc();
+        // customList.PrintAll();
     }
 }
