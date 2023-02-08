@@ -11,10 +11,14 @@ class CustomObject
 
 class MyCustomList
 {
-    public List<CustomObject> list { get; set; }
-    public MyCustomList(List<CustomObject> list)
+    public List<CustomObject> list;
+    public MyCustomList()
     {
-        this.list = list;
+        this.list = new List<CustomObject>();
+    }
+    public void Add(int key, string val)
+    {
+        list.Add(new CustomObject(key, val));
     }
     public void SortObjectsAsc()
     {
