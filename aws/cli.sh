@@ -8,3 +8,6 @@ aws s3 ls
 
 # Get EC2 intance metadata
 curl http://169.254.169.254/latest/meta-data/
+
+# SSH to EC2 Instance
+ssh -i [SOME_KEY.pem] ec2-user@SOME_IP
