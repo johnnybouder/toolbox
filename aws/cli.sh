@@ -6,6 +6,9 @@ aws configure --profile [SOME_PROFILE_NAME]
 aws ec2 describe-instances
 aws s3 ls
 
+# Manually trigger an alarm
+aws cloudwatch set-alarm-state ...
+
 # Get EC2 intance metadata
 curl http://169.254.169.254/latest/meta-data/
 
